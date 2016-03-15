@@ -26,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
             //锁屏后杀死自己的进程，
             android.os.Process.killProcess(android.os.Process.myPid());
         } else {
+            /**
+             *如果设备管理器没有激活，则弹窗提示
+             */
             showDialog();
         }
     }
